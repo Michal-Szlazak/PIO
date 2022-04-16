@@ -5,16 +5,12 @@
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo.MenuBarController">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo.CalculatorController">
    <children>
-      <Label layoutX="206.0" layoutY="14.0" prefHeight="51.0" prefWidth="128.0" text="To jest Calc">
-         <font>
-            <Font size="20.0" />
-         </font>
-      </Label>
-      <FlowPane orientation="VERTICAL" prefHeight="320.0" prefWidth="40.0" style="-fx-background-color: rgb(161,161,161);" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+      <FlowPane orientation="VERTICAL" prefHeight="320.0" prefWidth="40.0" style="-fx-background-color: rgb(161,161,161);">
          <children>
             <ImageView fx:id="iconMain" fitHeight="40.0" fitWidth="600.0" onMouseClicked="#switchToSceneMainScene" pickOnBounds="true" preserveRatio="true">
                <image>
@@ -54,7 +50,7 @@
             </ImageView>
          </children>
       </FlowPane>
-      <FlowPane alignment="BOTTOM_LEFT" layoutY="320.0" orientation="VERTICAL" prefHeight="181.0" prefWidth="40.0" style="-fx-background-color: rgb(161,161,161);" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="320.0">
+      <FlowPane alignment="BOTTOM_LEFT" layoutY="320.0" orientation="VERTICAL" prefHeight="181.0" prefWidth="40.0" style="-fx-background-color: rgb(161,161,161);">
          <children>
             <ImageView fitHeight="40.0" fitWidth="51.0" pickOnBounds="true" preserveRatio="true">
                <image>
@@ -68,5 +64,177 @@
             </ImageView>
          </children>
       </FlowPane>
+      <AnchorPane layoutX="193.0" layoutY="46.0" prefHeight="440.0" prefWidth="460.0" style="-fx-background-color: #222; -fx-background-radius: 28;">
+         <children>
+            <Pane layoutX="8.0" layoutY="34.0" prefHeight="400.0" prefWidth="440.0" style="-fx-background-radius: 15 15 25 25; -fx-background-color: linear-gradient(to right, #DECBA4, #3E5151)linear-gradient(to right, #DECBA4, #3E5151);">
+               <children>
+                  <Pane layoutX="10.0" layoutY="14.0" prefHeight="80.0" prefWidth="420.0" style="-fx-background-color: #00000025; -fx-background-radius: 15;">
+                     <children>
+                        <Label fx:id="result" alignment="CENTER_RIGHT" layoutX="6.0" layoutY="19.0" prefHeight="43.0" prefWidth="400.0" text="0.0" textFill="WHITE">
+                           <font>
+                              <Font size="35.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </Pane>
+                  <Pane fx:id="button7" layoutX="10.0" layoutY="100.0" onMouseClicked="#NumberClicked" prefHeight="70.0" prefWidth="100.0" style="-fx-background-color: #343434#343434; -fx-background-radius: 15;">
+                     <children>
+                        <Label layoutX="40.0" layoutY="14.0" text="7" textFill="WHITE">
+                           <font>
+                              <Font size="35.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </Pane>
+                  <Pane fx:id="button4" layoutX="10.0" layoutY="172.0" onMouseClicked="#NumberClicked" prefHeight="70.0" prefWidth="100.0" style="-fx-background-color: #343434#343434; -fx-background-radius: 15;">
+                     <children>
+                        <Label layoutX="39.0" layoutY="14.0" text="4" textFill="WHITE">
+                           <font>
+                              <Font size="35.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </Pane>
+                  <Pane fx:id="button1" layoutX="10.0" layoutY="244.0" onMouseClicked="#NumberClicked" prefHeight="70.0" prefWidth="100.0" style="-fx-background-color: #343434#343434; -fx-background-radius: 15;">
+                     <children>
+                        <Label layoutX="42.0" layoutY="14.0" text="1" textFill="WHITE">
+                           <font>
+                              <Font size="35.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </Pane>
+                  <Pane fx:id="buttonclear" layoutX="10.0" layoutY="316.0" onMouseClicked="#OperatorClicked" prefHeight="70.0" prefWidth="100.0" style="-fx-background-color: #343434#343434; -fx-background-radius: 15;">
+                     <children>
+                        <Label layoutX="27.0" layoutY="14.0" text="AC" textFill="WHITE">
+                           <font>
+                              <Font size="35.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </Pane>
+                  <Pane fx:id="button8" layoutX="118.0" layoutY="101.0" onMouseClicked="#NumberClicked" prefHeight="70.0" prefWidth="100.0" style="-fx-background-color: #343434#343434; -fx-background-radius: 15;">
+                     <children>
+                        <Label layoutX="40.0" layoutY="14.0" text="8" textFill="WHITE">
+                           <font>
+                              <Font size="35.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </Pane>
+                  <Pane fx:id="button5" layoutX="118.0" layoutY="173.0" onMouseClicked="#NumberClicked" prefHeight="70.0" prefWidth="100.0" style="-fx-background-color: #343434#343434; -fx-background-radius: 15;">
+                     <children>
+                        <Label layoutX="40.0" layoutY="14.0" text="5" textFill="WHITE">
+                           <font>
+                              <Font size="35.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </Pane>
+                  <Pane fx:id="button2" layoutX="118.0" layoutY="245.0" onMouseClicked="#NumberClicked" prefHeight="70.0" prefWidth="100.0" style="-fx-background-color: #343434#343434; -fx-background-radius: 15;">
+                     <children>
+                        <Label layoutX="40.0" layoutY="14.0" text="2" textFill="WHITE">
+                           <font>
+                              <Font size="35.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </Pane>
+                  <Pane fx:id="button0" layoutX="118.0" layoutY="317.0" onMouseClicked="#NumberClicked" prefHeight="70.0" prefWidth="100.0" style="-fx-background-color: #343434#343434; -fx-background-radius: 15;">
+                     <children>
+                        <Label layoutX="39.0" layoutY="14.0" text="0" textFill="WHITE">
+                           <font>
+                              <Font size="35.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </Pane>
+                  <Pane fx:id="button9" layoutX="226.0" layoutY="102.0" onMouseClicked="#NumberClicked" prefHeight="70.0" prefWidth="100.0" style="-fx-background-color: #343434#343434; -fx-background-radius: 15;">
+                     <children>
+                        <Label layoutX="39.0" layoutY="14.0" text="9" textFill="WHITE">
+                           <font>
+                              <Font size="35.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </Pane>
+                  <Pane fx:id="button6" layoutX="226.0" layoutY="174.0" onMouseClicked="#NumberClicked" prefHeight="70.0" prefWidth="100.0" style="-fx-background-color: #343434#343434; -fx-background-radius: 15;">
+                     <children>
+                        <Label layoutX="39.0" layoutY="14.0" text="6" textFill="WHITE">
+                           <font>
+                              <Font size="35.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </Pane>
+                  <Pane fx:id="button3" layoutX="226.0" layoutY="246.0" onMouseClicked="#NumberClicked" prefHeight="70.0" prefWidth="100.0" style="-fx-background-color: #343434#343434; -fx-background-radius: 15;">
+                     <children>
+                        <Label layoutX="40.0" layoutY="14.0" text="3" textFill="WHITE">
+                           <font>
+                              <Font size="35.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </Pane>
+                  <Pane fx:id="buttonequals" layoutX="226.0" layoutY="318.0" onMouseClicked="#OperatorClicked" prefHeight="70.0" prefWidth="100.0" style="-fx-background-color: #343434#343434; -fx-background-radius: 15;">
+                     <children>
+                        <Label layoutX="39.0" layoutY="14.0" text="=" textFill="WHITE">
+                           <font>
+                              <Font size="35.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </Pane>
+                  <Pane fx:id="buttonplus" layoutX="330.0" layoutY="103.0" onMouseClicked="#OperatorClicked" prefHeight="70.0" prefWidth="100.0" style="-fx-background-color: #e49b0f#e49b0f; -fx-background-radius: 15;">
+                     <children>
+                        <Label layoutX="39.0" layoutY="14.0" text="+" textFill="WHITE">
+                           <font>
+                              <Font size="35.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </Pane>
+                  <Pane fx:id="buttonminus" layoutX="330.0" layoutY="175.0" onMouseClicked="#OperatorClicked" prefHeight="70.0" prefWidth="100.0" style="-fx-background-color: #e49b0f#e49b0f; -fx-background-radius: 15;">
+                     <children>
+                        <Label layoutX="42.0" layoutY="14.0" text="-" textFill="WHITE">
+                           <font>
+                              <Font size="35.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </Pane>
+                  <Pane fx:id="buttontimes" layoutX="330.0" layoutY="247.0" onMouseClicked="#OperatorClicked" prefHeight="70.0" prefWidth="100.0" style="-fx-background-color: #e49b0f#e49b0f; -fx-background-radius: 15;">
+                     <children>
+                        <Label layoutX="42.0" layoutY="14.0" text="x" textFill="WHITE">
+                           <font>
+                              <Font size="35.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </Pane>
+                  <Pane fx:id="buttondivide" layoutX="330.0" layoutY="319.0" onMouseClicked="#OperatorClicked" prefHeight="70.0" prefWidth="100.0" style="-fx-background-color: #e49b0f#e49b0f; -fx-background-radius: 15;">
+                     <children>
+                        <Label layoutX="39.0" layoutY="14.0" text="÷" textFill="WHITE">
+                           <font>
+                              <Font size="35.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </Pane>
+               </children></Pane>
+            <Pane layoutX="-2.0" prefHeight="34.0" prefWidth="460.0">
+               <children>
+                  <Pane layoutX="1.0" layoutY="-3.0" prefHeight="34.0" prefWidth="460.0">
+                     <children>
+                        <Label layoutX="160.0" layoutY="8.0" text="Kalkulator standardowy" textFill="#dfee07">
+                           <font>
+                              <Font name="AppleGothic Regular" size="13.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </Pane>
+               </children></Pane>
+         </children>
+      </AnchorPane>
    </children>
 </AnchorPane>

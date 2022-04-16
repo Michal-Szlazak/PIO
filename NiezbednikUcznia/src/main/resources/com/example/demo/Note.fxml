@@ -14,7 +14,7 @@
             <Font size="20.0" />
          </font>
       </Label>
-      <FlowPane orientation="VERTICAL" prefHeight="320.0" prefWidth="40.0" style="-fx-background-color: rgb(161,161,161);" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+      <FlowPane orientation="VERTICAL" prefHeight="320.0" prefWidth="40.0" style="-fx-background-color: rgb(161,161,161);">
          <children>
             <ImageView fx:id="iconMain" fitHeight="40.0" fitWidth="600.0" onMouseClicked="#switchToSceneMainScene" pickOnBounds="true" preserveRatio="true">
                <image>
@@ -54,7 +54,7 @@
             </ImageView>
          </children>
       </FlowPane>
-      <FlowPane alignment="BOTTOM_LEFT" layoutY="320.0" orientation="VERTICAL" prefHeight="181.0" prefWidth="40.0" style="-fx-background-color: rgb(161,161,161);" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="320.0">
+      <FlowPane alignment="BOTTOM_LEFT" layoutY="320.0" orientation="VERTICAL" prefHeight="181.0" prefWidth="40.0" style="-fx-background-color: rgb(161,161,161);">
          <children>
             <ImageView fitHeight="40.0" fitWidth="51.0" pickOnBounds="true" preserveRatio="true">
                <image>

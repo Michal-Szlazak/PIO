@@ -1,13 +1,10 @@
 package com.example.demo;
 
 import javafx.application.Application;
-import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
-import javafx.scene.image.Image;
-
 import java.io.IOException;
 
 public class Main extends Application {
@@ -17,7 +14,7 @@ public class Main extends Application {
             Parent root = FXMLLoader.load(getClass().getResource("Main.fxml"));
             Scene scene = new Scene(root);
             stage.setTitle("Niezbędnik ucznia");
-
+            stage.setResizable(false);
             stage.setScene(scene);
             stage.show();
 
