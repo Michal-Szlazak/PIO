@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/PIO.iml" filepath="$PROJECT_DIR$/.idea/PIO.iml" />
+      <module fileurl="file://$PROJECT_DIR$/NiezbednikUcznia/demo.iml" filepath="$PROJECT_DIR$/NiezbednikUcznia/demo.iml" />
+    </modules>
+  </component>
+</project>
